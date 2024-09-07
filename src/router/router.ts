@@ -20,7 +20,7 @@ for (const path in routeModules) {
   const module = routeModules[path];
   routes.push(...module.default);
 }
-console.log('ROUTES', routes);
+
 const router = createRouter({
   history: createWebHistory(),
   routes,

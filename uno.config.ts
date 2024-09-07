@@ -12,19 +12,20 @@ import {
 export default defineConfig({
   theme: {
     colors: {
-      primary: '#1C3A6F', // Bleu foncé pour la stabilité et la confiance
-      secondary: '#567792', // Bleu gris doux, évoquant la tranquillité
-      accent: '#81A69B', // Vert pâle, symbole de calme et de réconfort
-      neutral: '#D8CBBF', // Beige doux pour des arrières-plans chaleureux
-      highlight: '#FFD18C', // Jaune chaud pour attirer l'attention en douceur
-      error: '#E57373', // Rouge doux pour les messages d’erreur ou d'alerte
-      success: '#81C784', // Vert clair pour les actions réussies ou les messages positifs
+      primary: '#2B3A67',
+      secondary: '#496A81',
+      accent: '#85D1A5',
+      neutral: '#F4F4F4',
+      dark: '#1A1A1A',
+      highlight: '#FFCE6E',
     },
   },
   shortcuts: [
     ['btn-primary', 'px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary'],
     ['btn-secondary', 'px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary'],
     ['text-accent', 'text-accent'],
+    ['no-underline', 'no-underline text-current'],
+    ['link-hover', 'hover:text-accent hover:underline'],
   ],
   presets: [
     presetUno(),
