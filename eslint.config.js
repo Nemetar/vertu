@@ -5,20 +5,20 @@ import pluginVue from 'eslint-plugin-vue';
 import eslintConfigPrettier from 'eslint-config-prettier';
 
 export default [
-    { files: ['**/*.{js,mjs,cjs,ts,vue}'] },
-    { languageOptions: { globals: globals.browser } },
-    pluginJs.configs.recommended,
-    ...tseslint.configs.recommended,
-    ...pluginVue.configs['flat/essential'],
-    {
-        files: ['**/*.vue'],
-        languageOptions: { parserOptions: { parser: tseslint.parser } },
+  { files: ['**/*.{js,mjs,cjs,ts,vue}'] },
+  { languageOptions: { globals: globals.browser } },
+  pluginJs.configs.recommended,
+  ...tseslint.configs.recommended,
+  ...pluginVue.configs['flat/essential'],
+  {
+    files: ['**/*.vue'],
+    languageOptions: { parserOptions: { parser: tseslint.parser } },
+  },
+  eslintConfigPrettier,
+  {
+    rules: {
+      semi: ['error', 'always'],
+      quotes: ['error', 'single'],
     },
-    eslintConfigPrettier,
-    {
-        rules: {
-            semi: ['error', 'always'],
-            quotes: ['error', 'single'],
-        },
-    },
+  },
 ];
