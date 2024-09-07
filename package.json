@@ -10,7 +10,10 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "vue": "^3.4.37"
+    "axios": "^1.7.7",
+    "pinia": "^2.2.2",
+    "vue": "^3.4.37",
+    "vue-router": "4"
   },
   "devDependencies": {
     "@eslint/js": "^9.10.0",
