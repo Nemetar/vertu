@@ -6,6 +6,9 @@ const userRoutes: RouteRecordRaw[] = [
     path: '/register',
     name: 'Register',
     component: RegisterForm,
+    meta: {
+      layout: '',
+    },
   },
 ];
 

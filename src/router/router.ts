@@ -3,7 +3,7 @@ import { useAuthStore } from '@/modules/authentication/store/auth.store';
 const VertuShowcase = () => import('@/pages/VertuShowcase.vue');
 
 const routeModules: Record<string, { default: RouteRecordRaw[] }> = import.meta.glob(
-  '../../modules/*/router/*.ts',
+  '@/modules/*/router/*.ts',
   { eager: true }
 );
 
@@ -20,7 +20,7 @@ for (const path in routeModules) {
   const module = routeModules[path];
   routes.push(...module.default);
 }
-
+console.log('ROUTES', routes);
 const router = createRouter({
   history: createWebHistory(),
   routes,
