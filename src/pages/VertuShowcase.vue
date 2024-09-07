@@ -5,10 +5,14 @@
       <div class="container mx-auto flex justify-between items-center">
         <h1 class="text-5xl font-bold tracking-widest font-sans uppercase logo">Vertu</h1>
         <nav class="flex space-x-8 text-lg justify-between items-center">
-          <router-link to="/login" class="hover:text-highlight transition-colors no-underline"
+          <router-link
+            to="/login"
+            class="font-sans hover:text-highlight transition-colors no-underline"
             >Login</router-link
           >
-          <router-link to="/register" class="hover:text-highlight transition-colors no-underline"
+          <router-link
+            to="/register"
+            class="font-sans hover:text-highlight transition-colors no-underline"
             >Register</router-link
           >
         </nav>
@@ -19,21 +23,23 @@
     <section
       class="hero relative bg-cover bg-center min-h-screen flex flex-col items-center justify-center text-center"
     >
-      <h2 class="text-7xl font-extrabold uppercase tracking-wide leading-tight mb-6 animate-fadeIn">
+      <h2
+        class="text-7xl font-extrabold uppercase font-sans tracking-wide leading-tight mb-6 animate-fadeIn"
+      >
         Find Your <span class="text-highlight">Support</span>
       </h2>
-      <p class="text-xl mb-12 max-w-2xl animate-fadeIn delay-1s">
+      <p class="font-sans text-xl mb-12 max-w-2xl animate-fadeIn delay-1s">
         A safe, anonymous platform providing immediate support through video and audio meetings.
       </p>
       <div class="flex space-x-6 animate-fadeIn delay-2s">
         <router-link
           to="/register"
-          class="btn-primary px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
+          class="font-sans btn-primary px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
           >Get Started</router-link
         >
         <router-link
           to="/login"
-          class="btn-secondary px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
+          class="font-sans btn-secondary px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
           >Already a Member</router-link
         >
       </div>
@@ -87,5 +93,6 @@
     font-size: 1.2rem;
     text-transform: uppercase;
     transition: transform 0.3s ease;
+    font-weight: 600;
   }
 </style>

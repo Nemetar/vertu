@@ -19,6 +19,7 @@ export default defineConfig({
       dark: '#1A1A1A',
       highlight: '#FFCE6E',
     },
+    fontFamily: {},
   },
   shortcuts: [
     ['btn-primary', 'px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary'],
@@ -36,10 +37,10 @@ export default defineConfig({
     }),
     presetTypography(), // Typographie améliorée
     presetWebFonts({
+      provider: 'google',
       fonts: {
-        sans: 'Inter:400,700', // Police sans-serif élégante
-        serif: 'Playfair Display:400,700', // Police serif classique
-        mono: 'Fira Code:400,700', // Police monospace moderne
+        sans: 'Poppins:400,500,600,700',
+        serif: 'Merriweather',
       },
     }),
   ],
