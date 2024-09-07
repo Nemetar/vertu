@@ -1,6 +1,6 @@
-import { RouteRecordRaw } from 'vue-router'
-import { useAuthStore } from '../store/auth.store'
-const LoginForm = () => import('../components/login-form/LoginForm.vue')
+import { RouteRecordRaw } from 'vue-router';
+import { useAuthStore } from '../store/auth.store';
+const LoginForm = () => import('../components/login-form/LoginForm.vue');
 
 const authRoutes: RouteRecordRaw[] = [
     {
@@ -14,12 +14,12 @@ const authRoutes: RouteRecordRaw[] = [
     {
         path: '/logout',
         beforeEnter: (_to, _from, next) => {
-            const authStore = useAuthStore()
-            authStore.logout()
-            next('/login')
+            const authStore = useAuthStore();
+            authStore.logout();
+            next('/login');
         },
         redirect: '/login',
     },
-]
+];
 
-export default authRoutes
+export default authRoutes;

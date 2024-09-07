@@ -1,6 +1,6 @@
-import { RouteRecordRaw } from 'vue-router'
+import { RouteRecordRaw } from 'vue-router';
 const RegisterForm = () =>
-    import('../components/register-form/RegisterForm.vue')
+    import('../components/register-form/RegisterForm.vue');
 
 const userRoutes: RouteRecordRaw[] = [
     {
@@ -8,6 +8,6 @@ const userRoutes: RouteRecordRaw[] = [
         name: 'Register',
         component: RegisterForm,
     },
-]
+];
 
-export default userRoutes
+export default userRoutes;
