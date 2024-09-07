@@ -1,8 +1,8 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import router from './app/router/router';
-import pinia from './app/store/store';
-import registerComponents from './app/components/components';
+import router from '@/router/router';
+import pinia from '@/store/store';
+import registerLayouts from '@/components/layouts/registerLayouts';
 import 'virtual:uno.css';
 
 const app = createApp(App);
@@ -10,4 +10,4 @@ const app = createApp(App);
 app.use(router);
 app.use(pinia);
 app.mount('#app');
-registerComponents(app);
+registerLayouts(app);

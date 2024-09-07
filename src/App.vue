@@ -1,7 +1,5 @@
 <template>
-  <component :is="layoutComponent">
-    <router-view></router-view>
-  </component>
+  <component :is="layoutComponent"></component>
 </template>
 
 <script setup lang="ts">
@@ -11,7 +9,7 @@
   const route = useRoute();
 
   const layoutComponent = computed(() => {
-    const layoutName = route.meta.layout || 'DefaultLayout';
-    return defineAsyncComponent(() => import(`./app/components/layouts/${layoutName}.vue`));
+    const layoutName = route.meta.layout || 'EmptyLayout';
+    return defineAsyncComponent(() => import(`@/components/layouts/${layoutName}.vue`));
   });
 </script>

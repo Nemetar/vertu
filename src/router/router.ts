@@ -1,12 +1,15 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
-import { useAuthStore } from '../../modules/authentication/store/auth.store';
+import { useAuthStore } from '@/modules/authentication/store/auth.store';
+const VertuHome = () => import('@/pages/VertuHome.vue');
 
 const routeModules: Record<string, { default: RouteRecordRaw[] }> = import.meta.glob(
   '../../modules/*/router/*.ts',
   { eager: true }
 );
 
-const routes: Array<RouteRecordRaw> = [];
+const routes: Array<RouteRecordRaw> = [
+  { path: '/', name: 'VertuHome', component: VertuHome, meta: { layout: 'ShowcaseLayout' } },
+];
 
 for (const path in routeModules) {
   const module = routeModules[path];

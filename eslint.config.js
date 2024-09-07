@@ -19,6 +19,12 @@ export default [
     rules: {
       semi: ['error', 'always'],
       quotes: ['error', 'single'],
+      'vue/component-tags-order': [
+        'error',
+        {
+          order: ['template', 'script', 'style'],
+        },
+      ],
     },
   },
 ];
