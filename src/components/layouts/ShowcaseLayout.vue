@@ -6,9 +6,12 @@
 
 <style scoped>
   .full-page-layout {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    height: 100vh;
     overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .full-page-layout::-webkit-scrollbar {
+    display: none;
   }
 </style>

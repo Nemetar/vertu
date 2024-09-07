@@ -1,12 +1,34 @@
 // uno.config.ts
-import { defineConfig } from 'unocss';
+import {
+  defineConfig,
+  presetAttributify,
+  presetIcons,
+  presetTypography,
+  presetUno,
+  presetWebFonts,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss';
 
 export default defineConfig({
   shortcuts: [
-    [
-      'btn',
-      'px-4 py-2 rounded inline-block bg-green-600 text-white cursor-pointer hover:bg-green-500',
-    ],
+    // ...
   ],
-  rules: [],
+  theme: {
+    colors: {
+      // ...
+    },
+  },
+  presets: [
+    presetUno(),
+    presetAttributify(),
+    presetIcons({ scale: 1.2, cdn: 'https://esm.sh/' }),
+    presetTypography(),
+    presetWebFonts({
+      fonts: {
+        // ...
+      },
+    }),
+  ],
+  transformers: [transformerDirectives(), transformerVariantGroup()],
 });

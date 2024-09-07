@@ -11,5 +11,4 @@
   import Features from '@/components/VertuFeatures.vue';
   import Footer from '@/components/VertuFooter.vue';
 </script>
-
 <style></style>
