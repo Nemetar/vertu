@@ -80,7 +80,7 @@
     color: #0d0d0d;
     padding: 12px 24px;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     transition: transform 0.3s ease;
     font-weight: 600;
@@ -90,7 +90,7 @@
     color: #ffffff;
     padding: 12px 24px;
     border-radius: 6px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase;
     transition: transform 0.3s ease;
     font-weight: 600;
