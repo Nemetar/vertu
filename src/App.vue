@@ -1,7 +1,3 @@
-<template>
-  <component :is="layoutComponent"></component>
-</template>
-
 <script setup lang="ts">
   import { computed, defineAsyncComponent } from 'vue';
   import { useRoute } from 'vue-router';
@@ -13,3 +9,7 @@
     return defineAsyncComponent(() => import(`@/components/layouts/${layoutName}.vue`));
   });
 </script>
+
+<template>
+  <component :is="layoutComponent"></component>
+</template>

@@ -22,9 +22,11 @@ export default [
       'vue/component-tags-order': [
         'error',
         {
-          order: ['template', 'script', 'style'],
+          order: ['script', 'template', 'style'],
         },
       ],
+      'vue/multi-word-component-names': 'off',
+      'vue/no-reserved-component-names': 'off',
     },
   },
 ];

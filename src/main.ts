@@ -3,7 +3,7 @@ import App from './App.vue';
 import router from '@/router/router';
 import pinia from '@/store/store';
 import registerLayouts from '@/components/layouts/registerLayouts';
-import 'virtual:uno.css';
+import './index.css';
 
 const app = createApp(App);
 
