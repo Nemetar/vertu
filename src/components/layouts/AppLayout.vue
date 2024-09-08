@@ -3,9 +3,8 @@
 </script>
 
 <template>
-  <div class="min-h-screen relative bg-slate-950 p-4">
-    <RouterView />
-    <div class="absolute w-6/12 bottom-4 left-1/2 transform -translate-x-1/2 px-12">
+  <div class="min-h-screen relative bg-slate-950 p-4 z-10">
+    <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 px-4">
       <div
         class="w-full bg-white p-3 rounded-lg flex justify-around items-center space-x-8 border-2 border-yellow-500"
       >
@@ -31,5 +30,6 @@
         </router-link>
       </div>
     </div>
+    <RouterView />
   </div>
 </template>
