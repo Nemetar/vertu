@@ -1,5 +1,5 @@
 import { RouteRecordRaw } from 'vue-router';
-const MeetingHome = () => import('../views/MeetingsHome.vue');
+const MeetingHome = () => import('../views/MeetingsHome/MeetingsHome.vue');
 
 const meetingsRoutes: RouteRecordRaw[] = [
   {
