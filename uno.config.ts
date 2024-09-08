@@ -22,8 +22,14 @@ export default defineConfig({
     fontFamily: {},
   },
   shortcuts: [
-    ['btn-primary', 'px-4 py-2 bg-primary text-white rounded-lg hover:bg-secondary'],
-    ['btn-secondary', 'px-4 py-2 bg-secondary text-white rounded-lg hover:bg-primary'],
+    [
+      'btn-primary',
+      'bg-[#ffc482] text-[#0d0d0d] px-6 py-3 rounded-md text-[1rem] uppercase font-[600] font-sans transition-transform duration-300 ease hover:scale-105',
+    ],
+    [
+      'btn-secondary',
+      'bg-[#1a1a1a] text-white px-6 py-3 rounded-md text-[1rem] uppercase font-[600] font-sans transition-transform duration-300 ease hover:scale-105',
+    ],
     ['text-accent', 'text-accent'],
     ['no-underline', 'no-underline text-current'],
     ['link-hover', 'hover:text-accent hover:underline'],

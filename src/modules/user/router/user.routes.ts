@@ -7,7 +7,7 @@ const userRoutes: RouteRecordRaw[] = [
     name: 'Register',
     component: RegisterForm,
     meta: {
-      layout: '',
+      layout: 'AuthenticationLayout',
     },
   },
 ];

@@ -9,6 +9,7 @@ const authRoutes: RouteRecordRaw[] = [
     component: LoginForm,
     meta: {
       requireAuthorization: false,
+      layout: 'AuthenticationLayout',
     },
   },
   {

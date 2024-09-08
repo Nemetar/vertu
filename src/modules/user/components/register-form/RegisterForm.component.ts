@@ -1,7 +1,11 @@
 import { defineComponent, ref } from 'vue';
 import { useUserStore } from '../../store/user.store';
+import BasicCard from '@/components/cards/BasicCard.vue';
 
 export default defineComponent({
+  components: {
+    BasicCard,
+  },
   setup() {
     const username = ref('');
     const email = ref('');

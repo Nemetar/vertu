@@ -34,12 +34,12 @@
       <div class="flex space-x-6 animate-fadeIn delay-2s">
         <router-link
           to="/register"
-          class="font-sans btn-primary px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
+          class="btn-primary font-sans px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
           >Get Started</router-link
         >
         <router-link
           to="/login"
-          class="font-sans btn-secondary px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
+          class="btn-secondary font-sans px-10 py-4 shadow-lg hover:scale-105 transition-transform no-underline"
           >Already a Member</router-link
         >
       </div>
@@ -61,8 +61,6 @@
   .animate-fadeIn {
     animation: fadeIn 1.5s ease-in-out forwards;
   }
-
-  /* Styling inspired by Maniac Studios */
   .bg-dark {
     background-color: #0d0d0d;
   }
@@ -74,25 +72,5 @@
   }
   .text-highlight {
     color: #ffc482;
-  }
-  .btn-primary {
-    background-color: #ffc482;
-    color: #0d0d0d;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: transform 0.3s ease;
-    font-weight: 600;
-  }
-  .btn-secondary {
-    background-color: #1a1a1a;
-    color: #ffffff;
-    padding: 12px 24px;
-    border-radius: 6px;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: transform 0.3s ease;
-    font-weight: 600;
   }
 </style>
