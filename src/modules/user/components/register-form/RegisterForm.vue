@@ -3,36 +3,38 @@
 <template>
   <Card class="w-6/12">
     <CardHeader class="text-center">
-      <CardTitle class="text-2xl font-bold">Register</CardTitle>
+      <CardTitle class="text-2xl font-bold"
+        >Create an <span class="text-yellow-500 font-semibold">account</span></CardTitle
+      >
     </CardHeader>
 
     <CardContent>
       <form @submit.prevent="submitForm">
         <div class="mb-4">
-          <label for="username" class="block mb-2 text-sm font-medium">Username</label>
           <input
             type="text"
             id="username"
+            placeholder="Username"
             v-model="username"
             required
             class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-accent"
           />
         </div>
         <div class="mb-4">
-          <label for="email" class="block mb-2 text-sm font-medium">Email</label>
           <input
             type="email"
             id="email"
+            placeholder="Email"
             v-model="email"
             required
             class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-accent"
           />
         </div>
         <div class="mb-6">
-          <label for="password" class="block mb-2 text-sm font-medium">Password</label>
           <input
             type="password"
             id="password"
+            placeholder="Password"
             v-model="password"
             required
             class="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring focus:ring-accent"
