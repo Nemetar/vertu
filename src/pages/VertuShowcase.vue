@@ -4,20 +4,18 @@
 </script>
 
 <template>
-  <div class="min-h-screen bg-black text-white">
+  <div class="bg-slate-950 text-white">
     <!-- Header -->
     <header class="absolute top-0 left-0 w-full py-6 z-50">
       <div class="container flex justify-between items-center">
         <h1 class="text-white text-6xl font-semibold logo">Vertu</h1>
         <nav class="hidden md:flex space-x-8 text-lg">
-          <router-link
-            to="/login"
-            class="hover:text-yellow-400 transition duration-300 no-underline"
+          <router-link to="/login" class="hover:text-yellow-400 transition duration-300 underline"
             >Login</router-link
           >
           <router-link
             to="/register"
-            class="hover:text-yellow-400 transition duration-300 no-underline"
+            class="hover:text-yellow-400 transition duration-300 underline"
             >Register</router-link
           >
         </nav>
@@ -26,9 +24,8 @@
 
     <!-- Hero Section -->
     <section class="flex items-center justify-center min-h-screen relative">
-      <div></div>
       <Card
-        class="relative z-10 bg-black bg-opacity-75 p-10 shadow-xl text-white max-w-4xl mx-auto rounded-lg border-0"
+        class="relative z-10 bg-slate-950 p-10 text-white max-w-4xl mx-auto rounded-lg border-0"
       >
         <CardHeader class="text-center">
           <CardTitle class="text-6xl font-extrabold uppercase leading-tight tracking-wider">
