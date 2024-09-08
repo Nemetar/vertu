@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
 import { useAuthStore } from '@/modules/authentication/store/auth.store';
-const VertuShowcase = () => import('@/pages/VertuShowcase.vue');
+const Showcase = () => import('@/pages/Showcase.vue');
 
 const routeModules: Record<string, { default: RouteRecordRaw[] }> = import.meta.glob(
   '@/modules/*/router/*.ts',
@@ -10,8 +10,8 @@ const routeModules: Record<string, { default: RouteRecordRaw[] }> = import.meta.
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    name: 'VertuShowcase',
-    component: VertuShowcase,
+    name: 'Showcase',
+    component: Showcase,
     meta: { layout: 'ShowcaseLayout' },
   },
 ];
